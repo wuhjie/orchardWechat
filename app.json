@@ -1,14 +1,46 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/customer/customerLogin/login",
+    "pages/customer/customerList/customerList",
+    "pages/customer/customerPortal/customerPortal",
+    "pages/item/itemList/itemList"
   ],
+
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Fruit Orchard",
     "navigationBarTextStyle":"black"
   },
+
+  "tabBar" : {
+    "color": "#333333",
+    "selectedColor": "#2e75b6",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabBar/origin/home.png",
+        "selectedIconPath": "images/tabBar/selected/home.png",
+        "text": "home"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabBar/origin/search.png",
+        "selectedIconPath": "images/tabBar/selected/search.png",
+        "text": "search"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabBar/origin/profile.png",
+        "selectedIconPath": "images/tabBar/selected/profile.png",
+        "text": "profile"
+      }
+    ]
+
+  },
+
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

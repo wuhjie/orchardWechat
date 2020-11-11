@@ -1,0 +1,7 @@
+<view class="container">
+  <button wx:if="{{!hasUserInfo}}" open-type="getUserInfo" bind:getUserinfo="onGetUserInfo">autherised login</button>
+
+  <view class="avatar-container avatar-position">
+    <open-data wx:if="{{hasUserInfo}}" type="userNickName"></open-data>
+  </view>
+</view>

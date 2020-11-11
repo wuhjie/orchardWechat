@@ -1,3 +1,19 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    
+  },
+
+  "enablePullDownRefresh": true,
+
+  "usingComponents" : {
+    "i-grid": "../../dist/grid/",
+    "i-grid-item": "../../dist/grid-icon/",
+    "i-grid-icon": "../../dist/grid-label/",
+    "i-grid-label": "../../dist/grid-label/",
+    "i-icon": "../../dist/icon/",
+    "i-row": "../../dist/row/",
+    "i-card": "../../dist/card/",
+    "i-panel": "../../dist/index/",
+    "i-notice-bar": "../../dist/notice-bar/"
+  }
 }

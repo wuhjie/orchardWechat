@@ -1,22 +1,70 @@
-<!--index.wxml-->
-<!-- <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view> -->
 
-<!-- <view>
-<button bindtap='bindtest'>test</button>
-</view> -->
 
-<button bindtap = 'backEndRequest'>customer login</button>
-<view wx:for="{{list}}" wx:fot-item = "item">
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper">
+  <block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<i-grid>
+  <i-row>
+    <i-grid-item>
+      <i-grid-icon>
+        <i-icon size="24" type="activity" />
+        <i-grid-label>1</i-grid-label>
+      </i-grid-icon>
+    </i-grid-item>
+    <i-grid-item>
+      <i-grid-icon>
+        <i-icon size="24" type="addressbook" />
+        <i-grid-label>2</i-grid-label>
+      </i-grid-icon>
+    </i-grid-item>
+    <i-grid-item>
+      <i-grid-icon>
+        <i-icon size="24" type="barrage" />
+        <i-grid-label>3</i-grid-label>
+      </i-grid-icon>
+    </i-grid-item>
+  </i-row>
+  <i-row>
+    <i-grid-item>
+      <i-grid-icon>
+        <i-icon size="24" type="collection" />
+        <i-grid-label>4</i-grid-label>
+      </i-grid-icon>
+    </i-grid-item>
+    <i-grid-item>
+      <i-grid-icon>
+        <i-icon size="24" type="computer" />
+        <i-grid-label>5</i-grid-label>
+      </i-grid-icon>
+    </i-grid-item>
+    <i-grid-item>
+      <i-grid-icon>
+        <i-icon size="24" type="coupons" />
+        <i-grid-label>6</i-grid-label>
+      </i-grid-icon>
+    </i-grid-item>
+  </i-row>
+</i-grid>
+
+<i-panel title="notification">
+  <i-notice-bar icon="systemprompt" loop speed="1000">
+    77777777
+  </i-notice-bar>
+</i-panel>
+
+
+<button bindtap = 'customerLogin'>customer login</button>
+<!-- <view wx:for="{{list}}" wx:for-item = "item">
   customer: {{item}}
-</view>
+</view> -->
+
+<button bindtap = 'companyLogin'>company login</button>
+
+<button bindtap = 'itemInfo'>item info</button>
+
+
