@@ -7,3 +7,16 @@
   width: 100%;
   height: 100%;
 }
+
+.row-class{
+  background: #ffffff;
+}
+
+.col-class{
+  height: 32px;
+  line-height: 32px;
+  color: #ffffff;
+  text-align: center;
+  background: #2d8cf0;
+  font-size: 12px;
+}

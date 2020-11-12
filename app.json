@@ -2,10 +2,13 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/customer/customerLogin/login",
+    "pages/customer/customerLogin/customerLogin",
     "pages/customer/customerList/customerList",
     "pages/customer/customerPortal/customerPortal",
-    "pages/item/itemList/itemList"
+    "pages/item/itemList/itemList",
+    "pages/item/itemDetail/itemDetail"
+
+    
   ],
 
   "window":{

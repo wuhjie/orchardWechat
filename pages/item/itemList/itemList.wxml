@@ -1,10 +1,12 @@
-<view class = "container data-list">
-  <block wx:for="{{logs}}" wx:for-item="logs" wx:key="index">
-    <i-card full title="{{index + 1}}.cardTitle" extra="extra content" >
-      <view slot="content">{{index + 1}}.Goooooood</view>
-      <view slot="football">{{log}}</view>
-    </i-card>
-  </block>
-  <i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>
-  <i-load-more tip="{{loadMoreTip}}" loading="{{ loadMore }}" />
+<view class="container list-container">  
+ <view class="list-item" wx:for="{{itemList}}">  
+   <image class="left" src="/images/other/DSCF5039.JPG"></image>  
+   <view class="right">  
+     <view class="title">  
+       <view class="name">{{item.goodName}}</view>  
+       <view class="price">{{item.price}}</view>  
+     </view>  
+     <view class="time">{{item.companyId}}</view>  
+   </view>  
+ </view>  
 </view>
