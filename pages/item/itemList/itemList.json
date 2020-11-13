@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "itemList",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "i-cards": "/dist/card/index",
+    "i-spin": "/dist/spin/index",
+    "i-load-more": "/dist/load-more/index"
+  }
 }

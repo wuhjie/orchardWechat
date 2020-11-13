@@ -9,12 +9,11 @@ Page ({
       '../../images/index/index_2.JPG',
       '../../images/index/index_3.JPG',
     ],
-    cardList:[],
 
     indicatorDots: true,
     autoplay: true,
     interval: 2000,
-    duration: 10000,
+    duration: 1000,
     
     isAdd: false,
     handleAdd() {
@@ -62,7 +61,7 @@ Page ({
   },
 
   onLoad: function() {
-    this.
+
   },
 
 })

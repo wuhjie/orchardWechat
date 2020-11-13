@@ -1,12 +1,3 @@
-<view class="container list-container">  
- <view class="list-item" wx:for="{{itemList}}">  
-   <image class="left" src="/images/other/DSCF5039.JPG"></image>  
-   <view class="right">  
-     <view class="title">  
-       <view class="name">{{item.goodName}}</view>  
-       <view class="price">{{item.price}}</view>  
-     </view>  
-     <view class="time">{{item.companyId}}</view>  
-   </view>  
- </view>  
+<view wx:for="{{items}}">
+  {{index}}: {{index.message}}
 </view>
