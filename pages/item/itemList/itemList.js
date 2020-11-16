@@ -1,8 +1,6 @@
 Page({
   data: {
-    items: [{
-      message: 'foo',
-    }]
+    
   },
   onShow: function (){
     var that = this;
