@@ -1,24 +1,34 @@
 Page({
   data: {
-    
+    itemInfo: [
+      
+      
+    ]
   },
-  onShow: function (){
+  onLoad: function (){
     var that = this;
     wx.request({
       url: 'http://localhost:8080/wu-web/good/list',
       method: 'GET',
       success: (res) => {
-        var resList = res.data.areaList;
-        if (resList == null) {
+        console.log(res)
+        var itemList = res.data.data;
+        console.log(itemList)
+        if (itemList == null) {
           wx.showToast({
             title: 'fail to receive data' + res.data.errMeg,
           })
         }else {
           that.setData({
-            areaList: resList
+            itemList: itemList
           })
         }
       }
     })
   },
+
+  itemInfo : function(event) {
+    console.log(event)
+    // url: gerApp().globalData.httpUrl + ''
+  }
 })
