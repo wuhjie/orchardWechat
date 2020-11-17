@@ -8,7 +8,7 @@ Page({
   onLoad: function (){
     var that = this;
     wx.request({
-      url: 'http://localhost:8080/wu-web/good/list',
+      url: 'http://localhost:8080/wu-web/company/list',
       method: 'GET',
       success: (res) => {
         console.log(res)

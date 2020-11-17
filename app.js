@@ -33,7 +33,16 @@ App({
       }
     })
   },
+
   globalData: {
     userInfo: null
+  },
+
+  search: function(){
+    var that = this;
+    wx.navigateTo({
+      // event when clicking item info
+      url: '/pages/tool/search/search',
+    })
   }
 })

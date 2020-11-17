@@ -60,6 +60,14 @@ Page ({
     })
   },
 
+  companyInfo:function(){
+    var that = this;
+    wx.navigateTo({
+      // event when clicking item info
+      url: '../company/companyList/companyList',
+    })
+  },
+
   onLoad: function() {
 
   },

@@ -8,8 +8,8 @@
   </block>
 </swiper>
 
-<i-panel title="notification">
-  <i-notice-bar icon="systemprompt" loop speed="1000">
+<i-panel>
+  <i-notice-bar icon="systemprompt" loop speed="5000">
     77777777
   </i-notice-bar>
 </i-panel>
@@ -60,11 +60,13 @@
 
 <!-- bindtap is the name of the event -->
 <i-row>
-  <button bindtap='customerLogin'>customer login</button>
+  <!-- <button bindtap='customerLogin'>customer login</button>
 
-  <button bindtap='companyLogin'>company login</button>
+  <button bindtap='companyLogin'>company login</button> -->
 
   <button bindtap='itemInfo'>item info</button>
+
+  <button bindtap='companyInfo'>company info</button>
 </i-row>
 
 
