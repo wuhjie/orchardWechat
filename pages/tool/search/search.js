@@ -1,26 +1,25 @@
 Page({
   data: {
-    inputShowed: false,
-    inputVal:""
+      inputShowed: false,
+      inputVal: ""
   },
-
   onLoad() {
-    this.setData({
-      search: this.search.bind(this)
-    })
+      this.setData({
+          search: this.search.bind(this)
+      })
   },
-
   search: function (value) {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve([{
-          // todo: replace pre-define text into the real result
-          text: 'search result', value: 1}, {text: 'second search result', value: 2}])
-      }, 200)
-    })
+    console.log('select result', value)
+      return new Promise((resolve, reject) => {
+          setTimeout(() => {
+              resolve([{text: value, value: value}])
+          }, 10)
+      })
   },
-
   selectResult: function (e) {
-    console.log('select resilt', e.detail)
+      console.log('select result', e.detail)
+      wx.navigateTo({
+        url: '../../item/itemDetail/itemDetail',
+      })
   },
 });

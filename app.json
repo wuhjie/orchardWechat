@@ -7,8 +7,7 @@
     "pages/item/itemList/itemList",
     "pages/item/itemDetail/itemDetail",
     "pages/company/companyList/companyList",
-    "pages/tool/search/search",
-    "pages/orderRelated/orderDetails"
+    "pages/tool/search/search"
 
     
   ],
