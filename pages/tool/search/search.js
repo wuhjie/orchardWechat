@@ -4,7 +4,7 @@ Page({
     inputVal:""
   },
 
-  obLoad() {
+  onLoad() {
     this.setData({
       search: this.search.bind(this)
     })
@@ -14,6 +14,7 @@ Page({
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve([{
+          // todo: replace pre-define text into the real result
           text: 'search result', value: 1}, {text: 'second search result', value: 2}])
       }, 200)
     })

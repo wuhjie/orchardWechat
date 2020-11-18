@@ -1,6 +1,6 @@
-// pages/customer/customerList.js
+// pages/orderRelated/orderDetails.js
 Page({
-
+  
   /**
    * 页面的初始数据
    */

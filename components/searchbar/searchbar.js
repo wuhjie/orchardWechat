@@ -108,7 +108,7 @@ Component({
         },
         placeholder: {
             type: String,
-            value: '搜索'
+            value: 'search'
         },
         value: {
             type: String,
@@ -118,13 +118,14 @@ Component({
             type: Function,
             value: null
         },
+        // the sequence for calling search function
         throttle: {
             type: Number,
             value: 500
         },
         cancelText: {
             type: String,
-            value: '取消'
+            value: 'cancel'
         },
         cancel: {
             type: Boolean,

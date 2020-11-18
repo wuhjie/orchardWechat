@@ -3,70 +3,65 @@
 const app = getApp()
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
     motto: "Hongjie Wu's Portal",
     userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
-  },
-
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../customerPortal',
-    })
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    if(app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    }else if (this.data.canIUse) {
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
+    // hasUserInfo: false,
+    // canIUse: wx.canIUse('button.open-type.getUserInfo')
+    orderItems: [ 
+      {
+        typeId: 0,
+        name: 'Pending Orders',
+        // url: '../../index/index',
+        imageurl: '../../../images/other/_.jpeg',
+      },
+      {
+        typeId: 1,
+        name: 'Made Orders',
+        // url: '../../index/index',
+        imageurl: '../../../images/other/_.jpeg',
+      },
+      {
+        typeId: 2,
+        name: 'Dispatched Orders',
+        // url: '../../index/index',
+        imageurl: '../../../images/other/_.jpeg',
+      },
+      {
+        typeId: 3,
+        name: 'Delivered Orders',
+        // url: '../../index/index',
+        imageurl: '../../../images/other/_.jpeg',
+      },
+      {
+        typeId: 4,
+        name: 'Uncommand order',
+        // url: '../../index/index',
+        imageurl: '../../../images/other/_.jpeg',
       }
-    } else {
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        },
-        fail: function() {
-          wx.showModal({
-            title: 'warning',
-            content: 'not autherithed, please go the the autherization page',
-            success: function (res) {
-              if (res.confirm) {
-                console.log('customer confirm')
-                wx.navigateTo({
-                  // url undefined todo
-                  url: '../../tologin/login',
-                })
-              }
-            }
-          })
-        }
-      })
-    }
+    ],
   },
-  getUserInfo: function(e) {
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
+
+  // bindViewTap: function() {
+  //   wx.navigateTo({
+  //     url: '../customerPortal',
+  //   })
+  // },
+
+  toOrder: function () {
+    wx.navigateTo({
+      url: '../../',
     })
+  },
+
+
+  onLoad: function (options) {
+    console.log("onLoad")
+    var that = this
+    // app.getUserInfo(function (userInfo) {
+    //   that.setData ({
+    //     userInfo : userInfo
+    //   })
+    // })
   }
 })

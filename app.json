@@ -3,12 +3,12 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/customer/customerLogin/customerLogin",
-    "pages/customer/customerList/customerList",
     "pages/customer/customerPortal/customerPortal",
     "pages/item/itemList/itemList",
     "pages/item/itemDetail/itemDetail",
     "pages/company/companyList/companyList",
-    "pages/tool/search/search"
+    "pages/tool/search/search",
+    "pages/orderRelated/orderDetails"
 
     
   ],
@@ -37,7 +37,7 @@
         "text": "search"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/customer/customerPortal/customerPortal",
         "iconPath": "images/tabBar/origin/profile.png",
         "selectedIconPath": "images/tabBar/selected/profile.png",
         "text": "profile"

@@ -1,8 +1,4 @@
 <view class="page">
-  <view class="page_hd">
-    <view class="page__title">search bar</view>
-    <view class="page__desc">search</view>
-  </view>
   <view class="page__bd">
     <mp-searchbar bindselectresult="searchResult" search="{{search}}"></mp-searchbar>
   </view>
