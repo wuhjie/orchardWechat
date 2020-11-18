@@ -1,3 +1,4 @@
+
 Page({
   data: {
       inputShowed: false,
@@ -10,12 +11,21 @@ Page({
   },
   search: function (value) {
     console.log('select result', value)
-      return new Promise((resolve, reject) => {
-          setTimeout(() => {
-              resolve([{text: value, value: value}])
-          }, 10)
-      })
+    
+    wx.setStorage({
+        key: "queryItemId",
+        data: {
+            value
+        }
+    })
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve([{text: value, value: value}])
+        }, 10)
+    })
+
   },
+
   selectResult: function (e) {
       console.log('select result', e.detail)
       wx.navigateTo({
