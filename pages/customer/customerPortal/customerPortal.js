@@ -1,6 +1,6 @@
 // pages/customer/customerList/customerPortal.js
 
-const app = getApp()
+var app = getApp()
 Page({
 
   data: {
@@ -50,7 +50,7 @@ Page({
 
   toOrder: function () {
     wx.navigateTo({
-      url: '../../',
+      url: '../../customer/customerOrders/customerOrders',
     })
   },
 

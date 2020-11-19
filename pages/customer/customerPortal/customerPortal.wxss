@@ -1,8 +1,11 @@
 .userInfo {
   display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  background: #28cafc;
+  justify-content: center;
+  /* flex-direction: column; */
+  align-items: center;
+  background: #405B55;
+  width: 750rpx;
+  height: 200rpx;
 }
 
 .account-bg{
@@ -24,7 +27,7 @@
 .order {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
   width: 100%;
   height: 90rpx;
 }
@@ -85,15 +88,15 @@
 .list-item {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
   height: 80rpx;
 }
 
-.item-image {
+/* .item-image {
   width: 40rpx;
   height: 40rpx;
   margin: 20rpx;
-}
+} */
 
 .item-text {
   color: gray;
@@ -107,6 +110,5 @@
   background: lightgray;
   margin-left: 90rpx;
 }
-
 
 

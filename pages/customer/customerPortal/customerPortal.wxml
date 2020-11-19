@@ -1,9 +1,11 @@
 <view class="container">
 
   <view class="userInfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.userinfo-nickname}}</text>
-    <image src="../../../images/other/DSCF5039.JPG" class="account-bg"></image>
+    <!-- <image class="userinfo-avatar"  background-size="cover"></image> -->
+    <!-- user nickname -->
+    <!-- src="{{userInfo.avatarUrl}}" -->
+    <text class="userinfo-nickname">aaa</text>
+    <!-- <image src="../../../images/other/DSCF5039.JPG" class="account-bg"></image> -->
   </view>
 
   <view class="separate"></view>
@@ -20,4 +22,32 @@
       <view class="nav-item"></view>
     </block>
   </view>
+
+  <view class="separate"></view>
+  <view class="person-list">
+    <view class="list-item">
+      <text class="item-text">my favourite</text>
+    </view>
+    <view class="person-line"></view>
+    <view class="list-item">
+      <text class="item-text">delivery address</text>
+    </view>
+    <view class="person-line"></view>
+    <view class="list-item">
+      <text class="item-text">order records</text>
+    </view>
+    <view class="person-line"></view>
+    <view class="list-item">
+      <text class="item-text">order records</text>
+    </view>
+    <view class="person-line"></view>
+    <view class="list-item">
+      <text class="item-text">my comments</text>
+    </view>
+    <view class="person-line"></view>
+    <view class="list-item">
+      <text class="item-text">promot invatation</text>
+    </view>
+  </view>
+  <view class="separate"></view>
 </view>
